@@ -30,7 +30,7 @@ const Footer = () => {
 
 
         <p className="footer-copy">
-          Copyright © <a href="#">Pedro Daniel</a> - All rights reserved - Todos los derechos reservados
+          Copyright © <a href="/home">Pedro Daniel</a> - All rights reserved - Todos los derechos reservados
         </p>
       </Bounce>
 
