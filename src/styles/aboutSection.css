@@ -1,0 +1,186 @@
+.about-section {
+  padding: 4rem 0rem;
+  background-color: #fdfdfd;
+  margin-bottom: 1rem;
+  /* text-align: center; */
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+  text-align: center;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+
+
+.skills-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.about-card {
+  background: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  padding: 1.5rem 2rem;
+  /* max-width: 400px; */
+  /* text-align: center;
+  align-items: center; */
+}
+
+.intro-card {
+  text-align: center;
+  max-width: 40%;
+}
+
+.download-btn {
+  margin-top: 1rem;
+  display: inline-block;
+  background-color: #6c63ff;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.8rem;
+}
+
+.skill-tags span {
+  background-color: #8664ff;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.skill-column {
+  flex: 1 1 250px;
+  max-width: 300px;
+}
+
+.titulo {
+  text-align: center;
+}
+
+.icon-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.tech-icon {
+  font-size: 2.5rem;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.tech-icon:hover {
+  transform: scale(1.5);
+}
+
+/* Optional: Customize color per tech */
+.tech-icon.html {
+  color: #e34c26;
+}
+
+.tech-icon.css {
+  color: #264de4;
+}
+
+.tech-icon.bootstrap {
+  color: #7952b3;
+}
+
+.tech-icon.js {
+  color: #f0db4f;
+}
+
+.tech-icon.vue {
+  color: #42b883;
+}
+
+.tech-icon.react {
+  color: #61dbfb;
+}
+
+.tech-icon.angular {
+  color: #dd1b16;
+}
+
+.tech-icon.php {
+  color: #8892be;
+}
+
+.tech-icon.java {
+  color: #f89820;
+}
+
+.tech-icon.python {
+  color: #306998;
+}
+
+.tech-icon.cpp {
+  color: #00599C;
+}
+
+.tech-icon.mysql {
+  color: #00758F;
+}
+
+.tech-icon.postgresql {
+  color: #336791;
+}
+
+.tech-icon.mongodb {
+  color: #4DB33D;
+}
+
+.tech-icon.db {
+  color: #888;
+}
+
+.tech-icon.kubernetes {
+  color: #326ce5;
+}
+
+.tech-icon.git {
+  color: #f1502f;
+}
+
+.tech-icon.linux {
+  color: #000000;
+}
+
+.tech-icon.network {
+  color: #6c757d;
+}
+
+
+@media (max-width: 768px) {
+  .skills-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-column {
+    max-width: 90%;
+  }
+}

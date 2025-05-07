@@ -1,0 +1,145 @@
+.project-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 2rem 0rem;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-top: 0px;
+  color: #333;
+  text-align: center;
+}
+
+.project-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 32%;
+  background: var(--color-white);
+  border-radius: 20px;
+  box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.project-box:hover {
+  transform: translateY(-5px);
+}
+
+.project-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.project-box > i {
+  font-size: 50px;
+  color: #00B5E7;
+  margin-bottom: 25px;
+}
+
+.project-box label {
+  font-size: 15px;
+  color: #777;
+}
+
+.project-box::after,
+.contact-info::after {
+  content: "";
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  background: var(--second-color);
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+  z-index: 1;
+}
+
+.project-box:hover::after,
+.contact-info:hover::after {
+  bottom: 0;
+}
+
+.project-box:hover i,
+.project-box:hover h3,
+.project-box:hover label,
+.project-box:hover .project-button {
+  color: var(--color-white);
+  z-index: 2;
+  position: relative;
+}
+
+.project-text {
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  z-index: 2;
+  position: relative;
+}
+
+.project-button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #00B5E7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  z-index: 2;
+  position: relative;
+}
+
+.project-box:hover .project-button {
+  background-color: #ffffff;
+  color: var(--second-color);
+}
+
+.tech-icon {
+  font-size: 1.8rem;
+  margin: 0.3rem;
+}
+
+/* Colores oficiales */
+.tech-icon.html { color: #E34F26; }
+.tech-icon.css { color: #1572B6; }
+.tech-icon.js { color: #F7DF1E; }
+.tech-icon.bootstrap { color: #7952B3; }
+.tech-icon.tailwind { color: #38BDF8; }
+.tech-icon.react { color: #61DAFB; }
+.tech-icon.vue { color: #42b883; }
+.tech-icon.angular { color: #DD0031; }
+.tech-icon.laravel { color: #FF2D20; }
+.tech-icon.php { color: #777BB4; }
+.tech-icon.docker { color: #2496ED; }
+.tech-icon.aws { color: #FF9900; }
+.tech-icon.spring { color: #6DB33F; }
+.tech-icon.vaadin { color: #00B4F0; }
+.tech-icon.java { color: #007396; }
+
+@media (max-width: 1024px) {
+  .project-box {
+    width: 48%; /* 2 columnas */
+  }
+}
+
+@media (max-width: 768px) {
+  .project-box {
+    width: 100%; /* 1 columna */
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,118 @@
+/* Estilo base global para evitar desbordamientos */
+
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Evita scroll horizontal */
+}
+
+.contact-section {
+  padding: 4rem 1rem; /* Menos padding horizontal */
+  text-align: center;
+  background-color: #f8f9fa;
+  max-width: 100vw;    /* Previene que se desborde */
+  overflow-x: hidden;  /* Asegura que no haya scroll lateral */
+}
+
+.contact-title {
+  font-size: 2rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.contact-subtitle {
+  color: #999;
+  margin-bottom: 2rem;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.contact-info-box {
+  background-color: #00cfff;
+  color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  min-width: 280px;
+  flex: 1 1 300px;
+  max-width: 400px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-info-box p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.contact-form {
+  flex: 2 1 300px;
+  max-width: 600px;
+  min-width: 280px;
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column; /* Por defecto en mobile */
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-row input {
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  outline: none;
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  resize: vertical;
+  height: 200px;
+  outline: none;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+.send-btn {
+  background-color: #00cfff;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.3s;
+}
+
+.send-btn:hover {
+  background-color: #00b8e6;
+}
+
+/* Media query para pantallas más grandes (ej: tablets y escritorio) */
+@media (min-width: 768px) {
+  .form-row {
+    flex-direction: row; /* Inputs en la misma fila */
+  }
+
+  .form-row input {
+    flex: 1;
+  }
+}
