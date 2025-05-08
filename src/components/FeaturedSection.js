@@ -11,22 +11,20 @@ const FeaturedSection = () => {
         <h1 className="featured-name">
           <span className="typewriter-text">
             <Typewriter
-              words={['FullStack', 'DevOps']}
+              words={['FullStack', 'DevOps', 'Java', 'Laravel']}
               loop={true}
               cursor
               cursorStyle="_"
-              typeSpeed={100}
+              typeSpeed={130}
               deleteSpeed={50}
               delaySpeed={2000}
             />
           </span>
         </h1>
         <p className="featured-text-info">
-          Ingeniero informático especializado en tecnologías de la información y técnico superior de Desarrollo de Aplicaciones Web.
-        </p>
+        Ingeniero informático especializado en Tecnologías de la Información y Técnico Superior en Desarrollo de Aplicaciones Web, con experiencia en desarrollo full stack y despliegue de soluciones en entornos de producción.        </p>
         <p className="featured-text-info">
-          Apasionado del desarrollo web y las tecnologías. Aplico mis habilidades técnicas y valores obtenidos durante mi formación académica, aportando soluciones innovadoras en un entorno colaborativo.
-        </p>
+        Apasionado por la tecnología y el desarrollo de software, con habilidades sólidas en programación (Java, JavaScript, PHP, C++), diseño de arquitecturas web, bases de datos (MySQL, MongoDB) y metodologías DevOps (Docker, Kubernetes, Terraform). Enfocado en crear soluciones innovadoras y eficientes, aplicando conocimientos técnicos y valores de colaboración para resolver desafíos en equipo.        </p>
         <div className="featured-text-info">
           <a href="mailto:pedrodanielgf2@gmail.com">pedrodanielgf2@gmail.com</a>
           {" // "}

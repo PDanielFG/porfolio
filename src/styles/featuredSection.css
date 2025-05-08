@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center; /* Esto centra verticalmente */
-  padding: 100px 50px 50px 50px;
+  padding: 90px 50px 50px 50px;
   background-color: #f9f9f9;
   min-height: 100vh;
   box-sizing: border-box;
@@ -44,7 +44,8 @@
   padding-left: 30px;
   font-size: 1.1rem;
   color: #555;
-  margin-bottom: 30px;
+  margin-bottom: 1rem;
+  margin-top: 0px;
 }
 
 /* Buttons */
@@ -192,11 +193,34 @@
     font-size: 0.9rem;
   }
 
+  .featured-box{
+    gap: 0px;
+  }
+
+
+  .featured-name span {
+    font-size: 2rem;
+  }
+
+  .featured-name{
+    font-size: 2.2rem;
+  }
+
+  
   .featured-image img {
     width: 180px;
     height: 180px;
   }
 
+  .featured-text-info {
+    font-size: 0.8rem;
+    margin-top: 0px;
+  }
+
+  .featured-name{
+    margin-top: 0px;
+    margin-bottom: 0.8rem;
+  }
   .btn {
     font-size: 0.9rem; /* Botones más pequeños */
   }
