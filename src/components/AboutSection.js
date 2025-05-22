@@ -9,7 +9,7 @@ const AboutSection = () => {
   return (
     <section id="about" className="about-section">
       <Fade direction="down">
-        <h2 className="section-title">Sobre mí</h2>
+        <h2 className="section-title">Mis conocimientos</h2>
       </Fade>
 
       <div className="about-container">
