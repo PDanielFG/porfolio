@@ -38,7 +38,7 @@ const FeaturedSection = () => {
           <a href="https://github.com/PDanielFG" target="_blank" rel="noopener noreferrer">
             <FaGithub size={30} />
           </a>
-          <a href="/PDanielCV.pdf" download="PDanielCV.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="/PDanielCV.pdf" download="PedroDanielFCV.pdf" target="_blank" rel="noopener noreferrer">
             <button className="btn blue-btn">Descargar CV</button>
           </a>
         </div>
